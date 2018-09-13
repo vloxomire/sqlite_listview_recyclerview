@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Interfaz.RegistrarActivity"
+    android:background="@android:color/holo_blue_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INGRESE UNA PERSONA NUEVA"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Nombre"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:id="@+id/EdtNombre"
+        android:layout_marginTop="100dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese Apellido"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:id="@+id/EdtApellido"
+        android:layout_below="@+id/EdtNombre"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese DNI"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:id="@+id/EdtDNI"
+        android:layout_below="@+id/EdtApellido"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EdtDNI"
+        android:orientation="horizontal"
+        android:id="@+id/LinearDireccion"
+        android:gravity="center_horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Calle"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:id="@+id/EdtCalle"
+        android:layout_below="@+id/EdtDNI"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Altura"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:id="@+id/EdtAltura"
+
+        />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Piso"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:id="@+id/EdtPiso"
+            />
+    </LinearLayout>
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="TELEFONO"
+        android:inputType="numberSigned"
+        android:layout_below="@id/LinearDireccion"
+        android:id="@+id/EdtTelefono"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="GUARDAR"
+        android:id="@+id/BtnGuardar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
+
+</RelativeLayout>
