@@ -1,37 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingBottom="5sp"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    android:paddingTop="5sp">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="REGISTRO DE PERSONAS"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center"
-        android:layout_marginTop="10dp"/>
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
 
-    <Button
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="REGISTRO DE PERSONAS"
+            android:textAlignment="center" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="REGISTRO NUEVO"
-        android:id="@+id/BtnRegistrar"
+        <Button
+            android:id="@+id/BtnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="REGISTRO NUEVO" />
 
-        android:layout_centerInParent="true"/>
+        <Button
+            android:id="@+id/BtnVerRegistros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/BtnRegistrar"
+            android:text="VER REGISTROS" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatinActionButton"
+            android:layout_gravity="bottom|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add" />
+    </LinearLayout>
 
-    <Button
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="VER REGISTROS"
-        android:id="@+id/BtnVerRegistros"
-        android:layout_below="@id/BtnRegistrar"/>
-
-
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
